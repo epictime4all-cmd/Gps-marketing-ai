@@ -26,43 +26,73 @@
 
 <main>
   <div class="dashboard">
+
+    <!-- Chat Module -->
     <div class="card">
       <h2>Chat AI</h2>
       <button onclick="startChat()">Start Chat</button>
       <p id="chat-status">Status: idle</p>
     </div>
+
+    <!-- Voice Module -->
     <div class="card">
       <h2>Voice AI</h2>
       <button onclick="startVoice()">Start Voice AI</button>
       <p id="voice-status">Status: idle</p>
     </div>
+
+    <!-- Video Module -->
+    <div class="card">
+      <h2>Video AI</h2>
+      <button onclick="startVideo()">Start Video AI</button>
+      <p id="video-status">Status: idle</p>
+    </div>
+
+    <!-- Text / SMS Module -->
     <div class="card">
       <h2>Text / SMS AI</h2>
       <button onclick="sendText()">Send Text</button>
       <p id="text-status">Status: idle</p>
     </div>
+
+    <!-- Voicemail Module -->
     <div class="card">
       <h2>Voicemail AI</h2>
       <button onclick="sendVoicemail()">Send Voicemail</button>
       <p id="voicemail-status">Status: idle</p>
     </div>
+
+    <!-- RAG Dashboard -->
     <div class="card">
       <h2>RAG Dashboard</h2>
       <button onclick="fetchRAG()">Run RAG Query</button>
       <p id="rag-status">Result will appear here</p>
     </div>
+
+    <!-- CRM Integration -->
     <div class="card">
       <h2>CRM Module</h2>
       <button onclick="openCRM()">Open CRM</button>
-      <p>Supports Salesforce, HubSpot, SuiteCRM</p>
+      <p>Supports Salesforce, HubSpot, SuiteCRM, ClickUp</p>
     </div>
+
+    <!-- Analytics -->
     <div class="card">
       <h2>Analytics & Reports</h2>
       <button onclick="showAnalytics()">View Analytics</button>
       <p>Live performance metrics</p>
     </div>
+
+    <!-- Agency Tier System -->
+    <div class="card">
+      <h2>Agency & Earnings</h2>
+      <button onclick="showAgency()">View Tier & Override Earnings</button>
+      <p>Track performance and override commissions</p>
+    </div>
+
   </div>
 
+  <!-- Global Financial Hub -->
   <div class="financial-hub">
     <h2>Global Financial Hub</h2>
     <div class="link-list">
@@ -72,24 +102,31 @@
       <a href="#" target="_blank">Commodities Live</a>
       <a href="#" target="_blank">Financial News Hub</a>
     </div>
-    <p>Interactive calculators and real-time AI analysis included</p>
+    <p>Interactive calculators, real-time AI analysis, and global financial updates.</p>
   </div>
+
 </main>
 
 <script>
-  // Replace with your real GPT-5 API Key
+  // ⚡ Replace the placeholder below with your real GPT-5 API key for full functionality
   const GPT5_API_KEY = "YOUR_REAL_GPT5_API_KEY";
 
   // Chat
   function startChat() {
     document.getElementById('chat-status').innerText = "Chat AI started";
-    alert("Chat AI is live!");
+    alert("Chat AI live!");
   }
 
   // Voice
   function startVoice() {
     document.getElementById('voice-status').innerText = "Voice AI started";
-    alert("Voice AI is live!");
+    alert("Voice AI live!");
+  }
+
+  // Video
+  function startVideo() {
+    document.getElementById('video-status').innerText = "Video AI started";
+    alert("Video AI live!");
   }
 
   // Text
@@ -118,6 +155,11 @@
   // Analytics
   function showAnalytics() {
     alert("Analytics dashboard opened");
+  }
+
+  // Agency Tier
+  function showAgency() {
+    alert("Agency & override earnings dashboard opened");
   }
 </script>
 
